@@ -1,7 +1,7 @@
 class Calculator:
     def add(self, a, b):
         try:
-            return a + b
+            return (float('%.2f' % (a + b)))
         except TypeError as Exception:
             return '这两个数必须都为数字类型'
             print(Exception)
@@ -32,5 +32,5 @@ class Calculator:
 
 
 print(Calculator().divide(-1.3, 2.6))
-print(Calculator().add('20.0000000004', 2))
+print(Calculator().add(0.1, 0.2))
 print(Calculator().multiply(-1.3, -3.9))
